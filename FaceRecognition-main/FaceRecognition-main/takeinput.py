@@ -30,7 +30,7 @@ while cap.isOpened():
                 ret, frame = cap.read()
                 frame = frame[120:120+250,200:200+250, :]
                 cv2.imshow('Image Collection', frame)
-                imgname = os.path.join(INPUT_PATH, str(name)+'_000'+str(count)+'.jpg')
+                imgname = os.path.join(INPUT_PATH, str(name)+'_00H0'+str(count)+'.jpg')
                 cv2.imwrite(imgname, frame)
             if count >9 and count <100:
                 ret, frame = cap.read()
